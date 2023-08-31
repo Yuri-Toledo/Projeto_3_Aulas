@@ -2,7 +2,7 @@ use user;
 
 CREATE TABLE User (
 
-UserID int NOT NULL,
+UserID int AUTO_INCREMENT,
 
 name VARCHAR (45),
 
