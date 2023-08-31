@@ -6,9 +6,9 @@ CREATE TABLE task_item (
 
     task_id INT,
     
-    name VARCHAR(255) NOT NULL,
+    name VARCHAR(45) NOT NULL,
     
-    `order` INT,
+    ordem INT,
     
     completed BOOLEAN,
     
@@ -19,5 +19,5 @@ CREATE TABLE task_item (
     completed_at DATE,
     
     FOREIGN KEY (task_id) REFERENCES task(id) -- Você precisará especificar a tabela e coluna de referência corretas aqui
-    
+
 );
